@@ -4,38 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>myhomepage</title>
   </head>
   <body>
     <div>
-      <h1>Tobias Schweizer</h1> 
-      <img 
-          style="float: left;"
-          src="Tobias.jpeg"
-          alt="my picture"
-          width="100"
-        />
-    
+      <h1>Tobias Schweizer</h1>
 
-      <nav id="nav">
-  <br>
-  <center>
-        <p> <center> </center><a  href="#contact">Contact</a></p>
-        <p><a href="#skills">Skillset </a></p>
+      <img class="image" src="Fotos/Tobias.jpeg" alt="my picture" />
+
+      <nav class="nav">
+        <p><a href="#about" class="nav-style">About</a></p>
+        <p><a href="#contact" class="nav-style">Contact</a></p>
+        <p><a href="#skills" class="nav-style">Skillset </a></p>
+        <p><a href="#survey" class="nav-style">Football Survey </a></p>
       </nav>
     </div>
     <main>
-      <br>
-      
+      <br />
 
-      <section id="contact">
+      <article class="About article-section">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          totam ipsa magnam? Quia fugit reprehenderit a ipsam esse omnis ab
+          veniam veritatis, odio exercitationem ratione blanditiis voluptatibus?
+          Harum, commodi ut.
+        </p>
+      </article>
+      <section class="contact article-section">
         <h2>Contact</h2>
-        
+
         <a href="https://github.com/sirtobiwan">GitHub</a>
-      
       </section>
 
-      <section id="skills">
+      <section class="skills article-section">
         <h2>Skillset</h2>
         <ul>
           <li>Github</li>
@@ -43,8 +46,13 @@
           <li>CSS</li>
           <li>JavaScript</li>
           <li>React</li>
-          
         </ul>
+      </section>
+
+      <section class="survey article-section">
+        <h2>Football Survey</h2>
+        <p>What is your favourite football team?</p>
+        <input type="text" id="fav-football" />
       </section>
     </main>
   </body>

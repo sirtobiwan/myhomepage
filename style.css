@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  background-color: rgb(233, 248, 246);
+}
+h1 {
+  background-color: rgb(199, 222, 242);
+  border-radius: 50px;
+  margin: auto;
+  padding: 30px;
+}
+.image {
+  float: left;
+  width: 70px;
+  border-radius: 30px;
+  top: 5px;
+  right: 1%;
+  position: absolute;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.nav-style {
+  text-decoration: none;
+  border-radius: 10px;
+  color: black;
+}
+
+.article-section {
+  border-style: ridge;
+}
+
+.About > p:first-letter {
+  font-size: 50px;
+  color: aqua;
+}
+
+li:nth-of-type(odd) {
+  color: aqua;
+}
+a[href*="#about"]:before {
+  content: "😁 ";
+}
+a[href*="#contact"]:before {
+  content: "📞 ";
+}
+
+a[href*="#skills"]:before {
+  content: "💡 ";
+}
+
+a[href*="#survey"]:before {
+  content: "⚽️ ";
+}
+
+input[type="text"]:focus {
+  outline: 2px solid darkblue;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
